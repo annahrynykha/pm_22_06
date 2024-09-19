@@ -87,6 +87,7 @@ gulp.task('uglify', () => {
         .pipe(dest('dist/js'))
 });
 
+
 // Include html files together
 gulp.task('html', () => {
     return src('app/index.html')
