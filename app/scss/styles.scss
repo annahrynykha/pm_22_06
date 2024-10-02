@@ -28,13 +28,17 @@ body {
 .left-column {
   /*flex: auto;*/
   flex-basis: 33%;
+  height: 100vh;
   /* flex-direction: column;*/
-  margin-left: 20px;
+  margin-left: 40px;
   margin-right: 40px;
   background-color: #d1e8e6;
   opacity: 0.85;
   padding: 20px;
   text-align: center;
+}
+.profile {
+  align-items: center;
 }
 .right-column {
   flex: auto;
@@ -56,15 +60,17 @@ img {
   border: 15px solid #ffffff;
   margin: 40px;
 }
+.icons {
+  font-size: 3.5rem;
+  color: #00a99d;
+ /* border: 2px solid #00a99d;*/
+ /* border-radius: 50%;*/
+  padding: 10px;
+}
+/*bootstrap icons*/
+/*fontawesome*/
 
-
-
-
-
-
-
-
-
-
-
-
+.vertical-line {
+  border-left: 2px solid #333333;
+  height: 100%;
+}

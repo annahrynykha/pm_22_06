@@ -64,5 +64,5 @@ gulp.task('browser-sync', () => {
     gulp.watch('./dist').on('change', browserSync.reload);
 });
 
-gulp.task('default',gulp.parallel('browser-sync','watch'));
-/*gulp.task('default', gulp.series('html', 'sass', 'uglify','img', gulp.parallel('browser-sync','watch')));*/
+
+gulp.task('default', gulp.series('html', 'sass', 'uglify','img', gulp.parallel('browser-sync','watch')));
