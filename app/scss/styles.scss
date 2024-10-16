@@ -80,6 +80,10 @@ h3{
   color: #00a99d;
   padding: 20px 20px 20px 0;
 }
+.align{
+  display: flex;
+  align-items: center;
+}
 .contact-me{
   p{
     font-size: 25px;
@@ -135,6 +139,16 @@ h3{
   p{
     text-align: justify;
     font-size: 21px;
+  }
+  h3{
+    display: flex;
+    justify-content: space-between;
+    //font-weight: 600;
+  }
+  span{
+    font-size: 1.7vw;
+    text-transform: none;
+    font-weight: 600;
   }
 }
 progress{
