@@ -137,3 +137,42 @@ h3{
     font-size: 21px;
   }
 }
+progress{
+  appearance: unset;
+  border-radius: 100px;
+  border: 1px solid #333333;
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+progress::-webkit-progress-bar{
+  background-color: #ffffff;
+  border-radius: 100px;
+  display: block;
+}
+progress::-webkit-progress-value{
+  background-color: #00a99d;
+  border-radius: 100px;
+  display: block;
+}
+#bar{
+  width:95px;
+  height:8px;
+}
+.skill{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.8vw 1vw 1vw 0;
+  h6{
+    font-size: 1.2vw;
+    font-weight: bold;
+  }
+}
+li::marker{
+  color: #00a99d;
+  font-size: 20px;
+  padding-left: 2vw;
+}
