@@ -37,9 +37,52 @@ body{
   margin: 0 !important;
   padding-left: 3vw;
   padding-right: 2.5vw;
-
+  h2{
+    text-align: left;
+  }
+  .horizontal-line{
+    margin: 4vw 0 4vw 0;
+  }
+}
+img{
+  height: 380px;
+  width: 380px;
+  border-radius: 200px;
+  border: 15px solid #ffffff;
+  margin: 40px;
+}
+.horizontal-line{
+  height: 2px;
+  background-color: #333333;
+  margin: 3.5vw 4vw 3.5vw 4vw;
 }
 .vertical-line {
   width: 1px;
   border-left: 3px solid black;
+}
+h1{
+  text-transform: uppercase;
+  font-size: 55px;
+  font-weight: 800;
+}
+h2 {
+  text-transform: uppercase;
+  font-size: 42px;
+  //font-weight: 750;
+  padding-bottom: 1vw;
+}
+.icons {
+  font-size: 3rem;
+  color: #00a99d;
+  padding: 20px 20px 20px 0;
+}
+.contact-me{
+  p{
+    font-size: 25px;
+    margin: 5px 0;
+    padding: 0;
+  }
+  i{
+    margin-right: 5px;
+  }
 }
