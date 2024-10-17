@@ -33,15 +33,17 @@ body{
   background-color: #d1e8e6;
   padding: 20px;
 }
+//create mixin
 .right-column{
   margin: 0 !important;
   padding-left: 3vw;
   padding-right: 2.5vw;
-  h2{
+
+  h2 {
     text-align: left;
   }
   .horizontal-line{
-    margin: 4vw 0 4vw 0;
+    margin: 3.5vw 0 4vw 0;
   }
 }
 img{
@@ -122,6 +124,13 @@ h3{
     text-align: right;
     margin: 5px 0;
   }
+  h3{
+    padding-top: 1vw;
+    padding-bottom: 0.5vw;
+  }
+  .icons{
+    padding-bottom: 0;
+  }
 }
 .about-me{
   margin-top:50px;
@@ -187,6 +196,31 @@ progress::-webkit-progress-value{
 }
 li::marker{
   color: #00a99d;
-  font-size: 20px;
-  padding-left: 2vw;
+  font-size: 2.5vw;
 }
+li{
+  padding-left: 1.5vw;
+  text-indent: -2vw;
+}
+ul{
+  list-style-type: disc;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  list-style-position: outside;
+}
+.r{
+  li{
+    //text-indent: -8vw;
+    text-align: left;
+  }
+}
+/*.icon {
+  background-color: #00a99d;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}*/
