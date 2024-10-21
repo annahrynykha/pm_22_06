@@ -9,19 +9,27 @@ body{
   padding: 0;
 }
 .raleway-normal {
-  font-family: $rale;
+  @include raleway(400, normal);
+  /*font-family: $rale;
   font-weight: 400;
-  font-style: normal;
+  font-style: normal;*/
 }
 .raleway-bold {
-  font-family: $rale;
+  @include raleway(800, normal);
+  /*font-family: $rale;
   font-weight: 800;
-  font-style: normal;
+  font-style: normal;*/
 }
 .raleway-italic {
-  font-family: $rale;
+  @include raleway(400, italic);
+  /*font-family: $rale;
   font-weight: 400;
-  font-style: italic;
+  font-style: italic;*/
+}
+@mixin raleway($weight, $style){
+  font-family: $rale;
+  font-weight: $weight;
+  font-style: $style;
 }
 .block{
   justify-content: center;
@@ -214,13 +222,3 @@ ul{
     text-align: left;
   }
 }
-/*.icon {
-  background-color: #00a99d;
-  color: white;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}*/
