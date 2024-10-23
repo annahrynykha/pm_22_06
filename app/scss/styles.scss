@@ -1,7 +1,7 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 $rale: "Raleway", sans-serif;
-body{
+body {
   background-color: #f4f4f4;
   border: 1.7vw solid #00a99d;
   font-family: $rale;
@@ -10,39 +10,29 @@ body{
 }
 .raleway-normal {
   @include raleway(400, normal);
-  /*font-family: $rale;
-  font-weight: 400;
-  font-style: normal;*/
 }
 .raleway-bold {
   @include raleway(800, normal);
-  /*font-family: $rale;
-  font-weight: 800;
-  font-style: normal;*/
 }
 .raleway-italic {
   @include raleway(400, italic);
-  /*font-family: $rale;
-  font-weight: 400;
-  font-style: italic;*/
 }
 @mixin raleway($weight, $style){
   font-family: $rale;
   font-weight: $weight;
   font-style: $style;
 }
-.block{
+.block {
   justify-content: center;
   text-align: center;
   background-color: #f2f2f2;
   position: relative;
 }
-.left-column{
+.left-column {
   background-color: #d1e8e6;
   padding: 20px;
 }
-//create mixin
-.right-column{
+.right-column {
   margin: 0 !important;
   padding-left: 3vw;
   padding-right: 2.5vw;
@@ -50,174 +40,188 @@ body{
   h2 {
     text-align: left;
   }
-  .horizontal-line{
-    margin: 3.5vw 0 4vw 0;
+  .horizontal-line {
+    margin: 3.5vw 0 3.5vw 0;
   }
 }
-img{
-  height: 380px;
-  width: 380px;
-  border-radius: 200px;
-  border: 15px solid #ffffff;
-  margin: 40px;
+img {
+  height: 19.8vw;
+  width: 19.8vw;
+  border-radius: 10.4vw;
+  border: 0.8vw solid #ffffff;
+  margin: 2vw;
 }
-.horizontal-line{
-  height: 2px;
+.horizontal-line {
+  height: 0.1vw;
   background-color: #333333;
   margin: 3.5vw 4vw 3.5vw 4vw;
 }
 .vertical-line {
-  width: 1px;
-  border-left: 3px solid black;
+  width: 0.1vw;
+  border-left: 0.1vw solid black;
 }
-h1{
+h1 {
   text-transform: uppercase;
-  font-size: 55px;
+  font-size: 3vw;
   font-weight: 800;
 }
 h2 {
   text-transform: uppercase;
-  font-size: 42px;
+  font-size: 2.2vw;
   //font-weight: 750;
   padding-bottom: 1vw;
 }
-h3{
+h3 {
   text-transform: uppercase;
-  font-size: 27px;
+  font-size: 1.4vw;
 }
 .icons {
   font-size: 3rem;
   color: #00a99d;
-  padding: 20px 20px 20px 0;
+  padding: 1vw 1vw 1vw 0;
 }
-.align{
+.align {
   display: flex;
   align-items: center;
 }
-.contact-me{
-  p{
-    font-size: 25px;
-    margin: 5px 0;
+.contact-me {
+  p {
+    font-size: 1.3vw;
+    margin: 0.3vw 0;
     padding: 0;
   }
-  i{
-    margin-right: 5px;
+  i {
+    margin-right: 0.3vw;
   }
 }
-.education{
-  p{
+.education {
+  p {
     text-transform: uppercase;
     font-size: 1.3vw;
-    margin: 5px 0;
+    margin: 0.3vw 0;
     padding: 0;
   }
-  h2{
-    padding-right: 5px;
+  h2 {
+    padding-right: 0.3vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
 }
-.references{
-  margin-bottom: 50px;
-  h2{
-    padding-right: 5px;
+/////0.1vw = 2px
+/////0.3vw = 5px
+.references {
+  margin-bottom: 2.6vw;
+  h2 {
+    padding-right: 0.3vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  p{
+  p {
     font-size: 1.6vw;
     padding-right: 90px;
     text-align: right;
     margin: 5px 0;
   }
-  h3{
+  h3 {
     padding-top: 1vw;
     padding-bottom: 0.5vw;
   }
-  .icons{
+  .icons {
     padding-bottom: 0;
   }
 }
-.about-me{
-  margin-top:50px;
-  p{
+.about-me {
+  margin-top: 2.6vw;
+  p {
+    word-spacing: -0.1vw;
     text-align: justify;
-    font-size: 25px;
+    font-size: 1.3vw;
   }
-  h2{
-    padding-right: 5px;
+  h2 {
+    padding-right: 0.3vw;
     justify-content: left;
   }
 }
-.job-experience{
+.job-experience {
   text-align: left;
-  p{
+  p {
     text-align: justify;
-    font-size: 21px;
+    font-size: 1.1vw;
   }
-  h3{
+  h3 {
     display: flex;
     justify-content: space-between;
     //font-weight: 600;
   }
-  span{
+  span {
     font-size: 1.7vw;
     text-transform: none;
     font-weight: 600;
   }
 }
-progress{
+progress {
+  //display: block;
+  //width: 100%;
+  //height: 1.5vw;
+  //border: 0.2vw solid #333333;
+  //border-radius: 1vw;
+  //padding: 0.1vw;
+  //box-sizing: border-box;
+  background-color: #ffffff;
   appearance: unset;
-  border-radius: 100px;
-  border: 1px solid #333333;
+  border-radius: 10vw;
+  border: 0.05vw solid #333333;
   //padding: 0; !important;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-progress::-webkit-progress-bar{
-  background-color: #ffffff;
-  border-radius: 100px;
+progress::-webkit-progress-bar {
+  //background-color: #ffffff;
+  //border-radius: 1vw;
+  border-radius: 10vw;
   display: block;
 }
-progress::-webkit-progress-value{
+progress::-webkit-progress-value {
   background-color: #00a99d;
-  border-radius: 100px;
+ // border-radius: 0.8vw;
+  border-radius: 10vw;
   display: block;
 }
-#bar{
-  width:95px;
-  height:8px;
+#bar {
+  width: 10vw;
+  height:0.8vw;
+  margin: 0;
 }
-.skill{
+.skill {
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 0.8vw 1vw 1vw 0;
-  h6{
+  h6 {
     font-size: 1.2vw;
     font-weight: bold;
   }
 }
-li::marker{
+li::marker {
   color: #00a99d;
   font-size: 2.5vw;
 }
-li{
+li {
   padding-left: 1.5vw;
   text-indent: -2vw;
 }
-ul{
+ul {
   list-style-type: disc;
   font-size: 1.5vw;
   text-transform: uppercase;
   list-style-position: outside;
 }
-.r{
-  li{
+.r {
+  li {
     //text-indent: -8vw;
     text-align: left;
   }
