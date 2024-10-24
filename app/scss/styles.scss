@@ -1,4 +1,4 @@
-@import "node_modules/bootstrap/scss/bootstrap";
+//@import "node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 $rale: "Raleway", sans-serif;
 body {
@@ -8,6 +8,12 @@ body {
   margin: 0;
   padding: 0;
 }
+
+@mixin raleway($weight, $style){
+  font-family: $rale;
+  font-weight: $weight;
+  font-style: $style;
+}
 .raleway-normal {
   @include raleway(400, normal);
 }
@@ -16,11 +22,6 @@ body {
 }
 .raleway-italic {
   @include raleway(400, italic);
-}
-@mixin raleway($weight, $style){
-  font-family: $rale;
-  font-weight: $weight;
-  font-style: $style;
 }
 .block {
   justify-content: center;
@@ -67,13 +68,13 @@ h1 {
 }
 h2 {
   text-transform: uppercase;
-  font-size: 2.2vw;
+  font-size: 2.6vw;
   //font-weight: 750;
   padding-bottom: 1vw;
 }
 h3 {
   text-transform: uppercase;
-  font-size: 1.4vw;
+  //font-size: 1.4vw;
 }
 .icons {
   font-size: 3rem;
@@ -173,13 +174,13 @@ progress {
   appearance: unset;
   border-radius: 10vw;
   border: 0.05vw solid #333333;
-  //padding: 0; !important;
+  padding: 0.1vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 progress::-webkit-progress-bar {
-  //background-color: #ffffff;
+  background-color: #ffffff;
   //border-radius: 1vw;
   border-radius: 10vw;
   display: block;
@@ -190,10 +191,10 @@ progress::-webkit-progress-value {
   border-radius: 10vw;
   display: block;
 }
-#bar {
-  width: 10vw;
+.bar {
+  width: 8vw;
   height:0.8vw;
-  margin: 0;
+  margin-bottom: 0.4vw;
 }
 .skill {
   align-items: center;
@@ -202,7 +203,7 @@ progress::-webkit-progress-value {
   justify-content: space-between;
   margin: 0.8vw 1vw 1vw 0;
   h6 {
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     font-weight: bold;
   }
 }
