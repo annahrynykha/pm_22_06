@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-const btnRoll = document.getElementsByClassName("roll");
+/*const btnRoll = document.getElementsByClassName("roll");
 const blockRoll = document.getElementsByClassName("roll-block");
 Array.from(btnRoll).forEach((btn, index) => {
     btn.addEventListener("click", () => showOrHide(blockRoll[index]));
@@ -36,4 +36,28 @@ function showOrHide(block) {
     } else {
         block.style.maxHeight = "300vh";
     }
-}
+}*/
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const headers = document.querySelectorAll(".roll"); // Select headers with the class 'roll'
+
+    headers.forEach((header) => {
+        const content = header.nextElementSibling; // Get the content block immediately following the header
+
+        // Check if the next sibling element has the class 'roll-block'
+        if (content && content.classList.contains("roll-block")) {
+            // Initially set max-height to 0 to keep content hidden
+            content.style.maxHeight = "0";
+
+            header.addEventListener("click", function () {
+                if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+                    content.style.maxHeight = "0"; // Collapse
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px"; // Expand
+                }
+            });
+        }
+    });
+});
