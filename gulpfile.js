@@ -45,6 +45,13 @@ gulp.task('img', () => {
         .pipe(dest('dist/img'));
 });
 
+//Copy JSON
+gulp.task('copy-json', () => {
+    return gulp.src('app/data/*.json')
+        .pipe(gulp.dest('dist/data'))
+        .pipe(browserSync.stream());
+});
+
 // Watcher
 gulp.task('watch', () => {
     gulp.watch('app/scss/*.scss', gulp.series('sass'));
@@ -52,6 +59,7 @@ gulp.task('watch', () => {
     gulp.watch('app/index.html', gulp.series('html'));
     gulp.watch('app/html/*.html', gulp.series('html'));
     gulp.watch('app/img/*', gulp.series('img'));
+    gulp.watch('app/data/*.json', gulp.series('copy-json'));
 });
 
 // Update browser
@@ -65,4 +73,4 @@ gulp.task('browser-sync', () => {
 });
 
 
-gulp.task('default', gulp.series('html', 'sass', 'uglify','img', gulp.parallel('browser-sync','watch')));
+gulp.task('default', gulp.series('html', 'sass', 'uglify','img', 'copy-json', gulp.parallel('browser-sync','watch')));
