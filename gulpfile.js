@@ -47,7 +47,7 @@ gulp.task('img', () => {
 
 //Copy JSON
 gulp.task('copy-json', () => {
-    return gulp.src('app/data/*.json')
+    return gulp.src('data/*.json')
         .pipe(gulp.dest('dist/data'))
         .pipe(browserSync.stream());
 });
@@ -59,7 +59,7 @@ gulp.task('watch', () => {
     gulp.watch('app/index.html', gulp.series('html'));
     gulp.watch('app/html/*.html', gulp.series('html'));
     gulp.watch('app/img/*', gulp.series('img'));
-    gulp.watch('app/data/*.json', gulp.series('copy-json'));
+    gulp.watch('data/*.json', gulp.series('copy-json'));
 });
 
 // Update browser

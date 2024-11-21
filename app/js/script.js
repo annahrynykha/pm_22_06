@@ -69,7 +69,7 @@ function fetchData(url, options = {}) {
 
 async function getData(){
     try{
-        const data = await fetchData("http://localhost:8080/data/data.json", {cache: "no-store"});
+        const data = await fetchData("http://localhost:8080/data.json", {cache: "no-store"});
         console.log("Отримані дані:", data);
         renderData(data);
     } catch (error) {
@@ -85,7 +85,7 @@ function renderData(data) {
     }
 }
 
-function renderEducation(education = []) {
+function renderEducation(education) {
     const container = document.getElementById('educations-container');
     container.innerHTML = '';
 
